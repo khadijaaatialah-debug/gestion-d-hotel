@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accueil — Darna Immobilier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body><div class="topbar"><div class="container">
+<span><i class="fa-solid fa-phone"></i> <span data-i18n="top.phone"></span></span>
+<span class="hide-m"><i class="fa-solid fa-envelope"></i> <span data-i18n="top.mail"></span></span>
+<span class="hide-m"><i class="fa-solid fa-clock"></i> <span data-i18n="top.hours"></span></span>
+</div></div><header class="site"><div class="container">
+<nav class="nav">
+<a class="brand" href="index.html"><svg class="logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4 6 20h5v22h26V20h5L24 4z" fill="#0e5b4a"/>
+<path d="M24 4 6 20h5v22h26V20h5L24 4z" stroke="#c9a24b" stroke-width="2" fill="none"/>
+<path d="M19 42V28h10v14" fill="#faf8f4"/>
+<path d="M19 28h10v14H19z" stroke="#0e5b4a" stroke-width="1.6"/>
+<circle cx="24" cy="14" r="2.6" fill="#c9a24b"/>
+</svg><span class="brand-name">Darna<small>Immobilier</small></span></a>
+<ul class="nav-links"><li><a href="index.html" class="active" data-i18n="nav.home"></a></li><li><a href="biens.html" class="" data-i18n="nav.biens"></a></li><li><a href="contact.html" class="" data-i18n="nav.contact"></a></li></ul>
+<div style="display:flex;gap:.8rem;align-items:center">
+<div class="lang-switch">
+<button data-lang="ar">عربية</button><button data-lang="fr">FR</button><button data-lang="en">EN</button>
+</div>
+<button class="burger"><i class="fa-solid fa-bars"></i></button>
+</div>
+</nav></div></header>
+<section class="hero" style="padding:0">
+  <div class="container">
+    <span class="kicker"><i class="fa-solid fa-house-chimney"></i> <span data-i18n="hero.kicker"></span></span>
+    <h1 data-i18n="hero.title"></h1>
+    <p data-i18n="hero.sub"></p>
+    <div class="hero-actions">
+      <a href="biens.html" class="btn btn-gold"><i class="fa-solid fa-magnifying-glass"></i> <span data-i18n="hero.cta1"></span></a>
+      <a href="contact.html#simulateur" class="btn btn-ghost"><i class="fa-solid fa-calculator"></i> <span data-i18n="hero.cta2"></span></a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><b>850+</b><span data-i18n="stat1"></span></div>
+      <div class="stat"><b>1 200+</b><span data-i18n="stat2"></span></div>
+      <div class="stat"><b>14</b><span data-i18n="stat3"></span></div>
+      <div class="stat"><b>12</b><span data-i18n="stat4"></span></div>
+    </div>
+  </div>
+  <a class="hero-scroll" href="#services"><i class="fa-solid fa-chevron-down"></i></a>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="sec-head reveal"><span class="kicker" data-i18n="sec.serv.k"></span>
+      <h2 data-i18n="sec.serv.t"></h2><p data-i18n="sec.serv.p"></p><div class="pattern"></div></div>
+    <div class="services-grid">
+      <div class="service reveal"><div class="ic"><i class="fa-solid fa-key"></i></div><h3 data-i18n="serv1.t"></h3><p data-i18n="serv1.p"></p></div>
+      <div class="service reveal"><div class="ic"><i class="fa-solid fa-file-contract"></i></div><h3 data-i18n="serv2.t"></h3><p data-i18n="serv2.p"></p></div>
+      <div class="service reveal"><div class="ic"><i class="fa-solid fa-chart-line"></i></div><h3 data-i18n="serv3.t"></h3><p data-i18n="serv3.p"></p></div>
+      <div class="service reveal"><div class="ic"><i class="fa-solid fa-hand-holding-dollar"></i></div><h3 data-i18n="serv4.t"></h3><p data-i18n="serv4.p"></p></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid #eee7d9;border-bottom:1px solid #eee7d9">
+  <div class="container">
+    <div class="sec-head reveal"><span class="kicker" data-i18n="sec.feat.k"></span>
+      <h2 data-i18n="sec.feat.t"></h2><p data-i18n="sec.feat.p"></p><div class="pattern"></div></div>
+    <div class="featured-grid" id="featured-grid"></div>
+    <div style="text-align:center;margin-top:2.5rem"><a href="biens.html" class="btn btn-green"><span data-i18n="feat.all"></span> <i class="fa-solid fa-arrow-right"></i></a></div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="container">
+    <div class="reveal"><h2 data-i18n="sec.why.t"></h2><p data-i18n="sec.why.p"></p></div>
+    <div class="band-points">
+      <div class="band-point reveal"><i class="fa-solid fa-shield-halved ic"></i><div><b data-i18n="why1.t"></b><span data-i18n="why1.p"></span></div></div>
+      <div class="band-point reveal"><i class="fa-solid fa-scale-balanced ic"></i><div><b data-i18n="why2.t"></b><span data-i18n="why2.p"></span></div></div>
+      <div class="band-point reveal"><i class="fa-solid fa-map-location-dot ic"></i><div><b data-i18n="why3.t"></b><span data-i18n="why3.p"></span></div></div>
+      <div class="band-point reveal"><i class="fa-solid fa-building-columns ic"></i><div><b data-i18n="why4.t"></b><span data-i18n="why4.p"></span></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="sec-head reveal"><span class="kicker" data-i18n="sec.testi.k"></span>
+      <h2 data-i18n="sec.testi.t"></h2><div class="pattern"></div></div>
+    <div class="testi-grid">
+      <div class="testi reveal"><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p data-i18n="t1"></p><div class="who"><div class="avatar">SB</div><div><b data-i18n="t1w"></b><span data-i18n="t1r"></span></div></div></div>
+      <div class="testi reveal"><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p data-i18n="t2"></p><div class="who"><div class="avatar">KE</div><div><b data-i18n="t2w"></b><span data-i18n="t2r"></span></div></div></div>
+      <div class="testi reveal"><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+        <p data-i18n="t3"></p><div class="who"><div class="avatar">YL</div><div><b data-i18n="t3w"></b><span data-i18n="t3r"></span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="cta reveal">
+      <h2 data-i18n="sec.cta.t"></h2><p data-i18n="sec.cta.p"></p>
+      <a href="contact.html" class="btn btn-gold"><i class="fa-solid fa-paper-plane"></i> <span data-i18n="sec.cta.b"></span></a>
+    </div>
+  </div>
+</section>
+<footer><div class="container">
+<div class="foot-grid">
+<div><a class="brand" href="index.html" style="margin-bottom:1rem"><svg class="logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4 6 20h5v22h26V20h5L24 4z" fill="#0e5b4a"/>
+<path d="M24 4 6 20h5v22h26V20h5L24 4z" stroke="#c9a24b" stroke-width="2" fill="none"/>
+<path d="M19 42V28h10v14" fill="#faf8f4"/>
+<path d="M19 28h10v14H19z" stroke="#0e5b4a" stroke-width="1.6"/>
+<circle cx="24" cy="14" r="2.6" fill="#c9a24b"/>
+</svg><span class="brand-name" style="color:#fff">Darna<small>Immobilier</small></span></a>
+<p style="font-size:.9rem;margin-top:1rem" data-i18n="foot.about"></p>
+<div class="socials">
+<a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+<a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+<a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+</div></div>
+<div><h4 data-i18n="foot.nav"></h4><ul class="foot-links">
+<li><a href="index.html" data-i18n="nav.home"></a></li>
+<li><a href="biens.html" data-i18n="nav.biens"></a></li>
+<li><a href="contact.html" data-i18n="nav.contact"></a></li>
+</ul></div>
+<div><h4 data-i18n="foot.contact"></h4><ul class="foot-contact">
+<li><i class="fa-solid fa-location-dot"></i><span data-i18n="ct.addr"></span></li>
+<li><i class="fa-solid fa-phone"></i><span data-i18n="top.phone"></span></li>
+<li><i class="fa-solid fa-envelope"></i><span data-i18n="top.mail"></span></li>
+<li><i class="fa-solid fa-clock"></i><span data-i18n="top.hours"></span></li>
+</ul></div>
+<div><h4 data-i18n="foot.news"></h4>
+<p style="font-size:.88rem" data-i18n="ct.addr"></p>
+<p style="font-size:.88rem;margin-top:.6rem" data-i18n="ct.info.p"></p>
+</div>
+</div>
+<div class="foot-bottom">© <span class="js-year"></span> Darna Immobilier — dar·na / دارنا</div>
+</div></footer>
+<script src="js/lang.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/simulator.js"></script>
+<script src="js/main.js"></script>
+</body></html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Simulateur — Darna Immobilier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body><div class="topbar"><div class="container">
+<span><i class="fa-solid fa-phone"></i> <span data-i18n="top.phone"></span></span>
+<span class="hide-m"><i class="fa-solid fa-envelope"></i> <span data-i18n="top.mail"></span></span>
+<span class="hide-m"><i class="fa-solid fa-clock"></i> <span data-i18n="top.hours"></span></span>
+</div></div><header class="site"><div class="container">
+<nav class="nav">
+<a class="brand" href="index.html"><svg class="logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4 6 20h5v22h26V20h5L24 4z" fill="#0e5b4a"/>
+<path d="M24 4 6 20h5v22h26V20h5L24 4z" stroke="#c9a24b" stroke-width="2" fill="none"/>
+<path d="M19 42V28h10v14" fill="#faf8f4"/>
+<path d="M19 28h10v14H19z" stroke="#0e5b4a" stroke-width="1.6"/>
+<circle cx="24" cy="14" r="2.6" fill="#c9a24b"/>
+</svg><span class="brand-name">Darna<small>Immobilier</small></span></a>
+<ul class="nav-links"><li><a href="index.html" class="" data-i18n="nav.home"></a></li><li><a href="biens.html" class="" data-i18n="nav.biens"></a></li><li><a href="contact.html" class="active" data-i18n="nav.contact"></a></li></ul>
+<div style="display:flex;gap:.8rem;align-items:center">
+<div class="lang-switch">
+<button data-lang="ar">عربية</button><button data-lang="fr">FR</button><button data-lang="en">EN</button>
+</div>
+<button class="burger"><i class="fa-solid fa-bars"></i></button>
+</div>
+</nav></div></header>
+<section class="page-hero" style="padding-bottom:7rem">
+  <div class="container">
+    <p class="crumbs"><a href="index.html" data-i18n="nav.home"></a> / <span data-i18n="nav.contact"></span></p>
+    <h1 data-i18n="contact.title"></h1><p data-i18n="contact.sub"></p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="contact-wrap">
+      <div class="card reveal">
+        <h3 style="color:var(--green);margin-bottom:.4rem" data-i18n="ct.info.t"></h3>
+        <p style="color:var(--grey);font-size:.92rem;margin-bottom:1rem" data-i18n="ct.info.p"></p>
+        <div class="info-item"><div class="ic"><i class="fa-solid fa-location-dot"></i></div><div><b data-i18n="foot.news"></b><p data-i18n="ct.addr"></p></div></div>
+        <div class="info-item"><div class="ic"><i class="fa-solid fa-phone"></i></div><div><b data-i18n="top.phone"></b><p>+212 5 22 00 00 00</p></div></div>
+        <div class="info-item"><div class="ic"><i class="fa-solid fa-envelope"></i></div><div><b data-i18n="top.mail"></b><p>contact@darna-immobilier.ma</p></div></div>
+        <div class="info-item"><div class="ic"><i class="fa-solid fa-clock"></i></div><div><b data-i18n="top.hours"></b><p data-i18n="top.hours"></p></div></div>
+        <div class="socials" style="margin-top:1.4rem">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="card reveal">
+        <h3 style="color:var(--green);margin-bottom:.4rem" data-i18n="ct.form.t"></h3>
+        <p style="color:var(--grey);font-size:.92rem;margin-bottom:1.4rem" data-i18n="ct.form.p"></p>
+        <form class="form-grid" id="contact-form">
+          <div class="field"><label data-i18n="fm.name"></label><input type="text" required data-i18n-ph="fm.name"></div>
+          <div class="field"><label data-i18n="fm.phone"></label><input type="tel" required placeholder="+212 6 00 00 00 00"></div>
+          <div class="field full"><label data-i18n="fm.mail"></label><input type="email" required placeholder="email@exemple.ma"></div>
+          <div class="field full"><label data-i18n="fm.subject"></label>
+            <select>
+              <option data-i18n="fm.s1"></option><option data-i18n="fm.s2"></option>
+              <option data-i18n="fm.s3"></option><option data-i18n="fm.s4"></option><option data-i18n="fm.s5"></option>
+            </select></div>
+          <div class="field full"><label data-i18n="fm.msg"></label><textarea rows="4" required data-i18n-ph="fm.msg"></textarea></div>
+          <div class="full"><button type="submit" class="btn btn-green"><i class="fa-solid fa-paper-plane"></i> <span data-i18n="fm.send"></span></button></div>
+        </form>
+        <p class="form-note" id="form-note" data-i18n="fm.ok"></p>
+      </div>
+    </div>
+
+    <div class="map reveal">
+      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-7.6600%2C33.5700%2C-7.5800%2C33.6100&layer=mapnik&marker=33.5900%2C-7.6200" loading="lazy" title="Darna Immobilier"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="simulateur" style="padding-top:0">
+  <div class="container">
+    <div class="sec-head reveal"><span class="kicker"><i class="fa-solid fa-calculator"></i> Simulator</span>
+      <h2 data-i18n="sim.t"></h2><p data-i18n="sim.p"></p><div class="pattern"></div></div>
+    <div class="sim-wrap">
+      <div class="card reveal">
+        <div class="field" style="margin-bottom:1.4rem">
+          <div class="range-row"><label data-i18n="sim.price"></label><span class="range-val" id="v-price"></span></div>
+          <input type="range" id="s-price" min="300000" max="10000000" step="50000" value="1850000">
+        </div>
+        <div class="field" style="margin-bottom:1.4rem">
+          <div class="range-row"><label data-i18n="sim.down"></label><span class="range-val" id="v-down"></span></div>
+          <input type="range" id="s-down" min="0" max="80" step="5" value="20">
+        </div>
+        <div class="field" style="margin-bottom:1.4rem">
+          <div class="range-row"><label data-i18n="sim.rate"></label><span class="range-val" id="v-rate"></span></div>
+          <input type="range" id="s-rate" min="2" max="9" step="0.1" value="4.2">
+        </div>
+        <div class="field">
+          <div class="range-row"><label data-i18n="sim.years"></label><span class="range-val" id="v-years"></span></div>
+          <input type="range" id="s-years" min="5" max="30" step="1" value="20">
+        </div>
+      </div>
+      <div class="sim-result reveal">
+        <span class="lbl" data-sim-lbl="sim.monthly"></span>
+        <div class="big" id="sim-monthly"></div>
+        <div class="donut">
+          <svg width="170" height="170" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="54" fill="none" stroke="rgba(255,255,255,.15)" stroke-width="14"/>
+            <circle id="donut-fg" cx="60" cy="60" r="54" fill="none" stroke="#c9a24b" stroke-width="14" stroke-linecap="round"/>
+          </svg>
+          <div class="center"><div><span class="lbl" data-sim-lbl="sim.ratio"></span><br><b id="donut-label"></b></div></div>
+        </div>
+        <div class="sim-detail">
+          <div class="row2"><span data-sim-lbl="sim.amount"></span><b id="sim-amount"></b></div>
+          <div class="row2"><span data-sim-lbl="sim.interests"></span><b id="sim-interest"></b></div>
+          <div class="row2"><span data-sim-lbl="sim.total"></span><b id="sim-total"></b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer><div class="container">
+<div class="foot-grid">
+<div><a class="brand" href="index.html" style="margin-bottom:1rem"><svg class="logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4 6 20h5v22h26V20h5L24 4z" fill="#0e5b4a"/>
+<path d="M24 4 6 20h5v22h26V20h5L24 4z" stroke="#c9a24b" stroke-width="2" fill="none"/>
+<path d="M19 42V28h10v14" fill="#faf8f4"/>
+<path d="M19 28h10v14H19z" stroke="#0e5b4a" stroke-width="1.6"/>
+<circle cx="24" cy="14" r="2.6" fill="#c9a24b"/>
+</svg><span class="brand-name" style="color:#fff">Darna<small>Immobilier</small></span></a>
+<p style="font-size:.9rem;margin-top:1rem" data-i18n="foot.about"></p>
+<div class="socials">
+<a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+<a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+<a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+</div></div>
+<div><h4 data-i18n="foot.nav"></h4><ul class="foot-links">
+<li><a href="index.html" data-i18n="nav.home"></a></li>
+<li><a href="biens.html" data-i18n="nav.biens"></a></li>
+<li><a href="contact.html" data-i18n="nav.contact"></a></li>
+</ul></div>
+<div><h4 data-i18n="foot.contact"></h4><ul class="foot-contact">
+<li><i class="fa-solid fa-location-dot"></i><span data-i18n="ct.addr"></span></li>
+<li><i class="fa-solid fa-phone"></i><span data-i18n="top.phone"></span></li>
+<li><i class="fa-solid fa-envelope"></i><span data-i18n="top.mail"></span></li>
+<li><i class="fa-solid fa-clock"></i><span data-i18n="top.hours"></span></li>
+</ul></div>
+<div><h4 data-i18n="foot.news"></h4>
+<p style="font-size:.88rem" data-i18n="ct.addr"></p>
+<p style="font-size:.88rem;margin-top:.6rem" data-i18n="ct.info.p"></p>
+</div>
+</div>
+<div class="foot-bottom">© <span class="js-year"></span> Darna Immobilier — dar·na / دارنا</div>
+</div></footer>
+<script src="js/lang.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/simulator.js"></script>
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
+</body></html>

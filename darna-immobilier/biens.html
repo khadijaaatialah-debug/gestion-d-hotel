@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nos Biens — Darna Immobilier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body><div class="topbar"><div class="container">
+<span><i class="fa-solid fa-phone"></i> <span data-i18n="top.phone"></span></span>
+<span class="hide-m"><i class="fa-solid fa-envelope"></i> <span data-i18n="top.mail"></span></span>
+<span class="hide-m"><i class="fa-solid fa-clock"></i> <span data-i18n="top.hours"></span></span>
+</div></div><header class="site"><div class="container">
+<nav class="nav">
+<a class="brand" href="index.html"><svg class="logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4 6 20h5v22h26V20h5L24 4z" fill="#0e5b4a"/>
+<path d="M24 4 6 20h5v22h26V20h5L24 4z" stroke="#c9a24b" stroke-width="2" fill="none"/>
+<path d="M19 42V28h10v14" fill="#faf8f4"/>
+<path d="M19 28h10v14H19z" stroke="#0e5b4a" stroke-width="1.6"/>
+<circle cx="24" cy="14" r="2.6" fill="#c9a24b"/>
+</svg><span class="brand-name">Darna<small>Immobilier</small></span></a>
+<ul class="nav-links"><li><a href="index.html" class="" data-i18n="nav.home"></a></li><li><a href="biens.html" class="active" data-i18n="nav.biens"></a></li><li><a href="contact.html" class="" data-i18n="nav.contact"></a></li></ul>
+<div style="display:flex;gap:.8rem;align-items:center">
+<div class="lang-switch">
+<button data-lang="ar">عربية</button><button data-lang="fr">FR</button><button data-lang="en">EN</button>
+</div>
+<button class="burger"><i class="fa-solid fa-bars"></i></button>
+</div>
+</nav></div></header>
+<section class="page-hero" style="padding-bottom:7rem">
+  <div class="container">
+    <p class="crumbs"><a href="index.html" data-i18n="nav.home"></a> / <span data-i18n="nav.biens"></span></p>
+    <h1 data-i18n="biens.title"></h1><p data-i18n="biens.sub"></p>
+  </div>
+</section>
+
+<section style="padding-top:0;padding-bottom:3rem">
+  <div class="container">
+    <div class="filters">
+      <div class="row">
+        <div class="field"><label data-i18n="f.type"></label>
+          <select id="f-type">
+            <option value="all" data-i18n="f.all"></option>
+            <option value="apartment" data-i18n="t.apartment"></option>
+            <option value="villa" data-i18n="t.villa"></option>
+            <option value="riad" data-i18n="t.riad"></option>
+            <option value="office" data-i18n="t.office"></option>
+            <option value="shop" data-i18n="t.shop"></option>
+          </select></div>
+        <div class="field"><label data-i18n="f.city"></label>
+          <select id="f-city">
+            <option value="all" data-i18n="f.any"></option>
+            <option value="casablanca">Casablanca</option>
+            <option value="rabat">Rabat</option>
+            <option value="marrakech">Marrakech</option>
+            <option value="tanger">Tanger</option>
+            <option value="fes">Fès</option>
+          </select></div>
+        <div class="field"><label data-i18n="f.budget"></label>
+          <input type="number" id="f-budget" min="0" step="50000" placeholder="2 500 000"></div>
+        <div class="field"><label data-i18n="f.rooms"></label>
+          <select id="f-rooms">
+            <option value="" data-i18n="f.any"></option>
+            <option value="1">1</option><option value="2">2</option>
+            <option value="3">3</option><option value="4">4</option><option value="5">5+</option>
+          </select></div>
+        <div class="field"><button class="btn btn-green" id="f-reset" style="width:100%;justify-content:center"><i class="fa-solid fa-rotate-left"></i> <span data-i18n="f.reset"></span></button></div>
+      </div>
+    </div>
+    <p class="results-count" id="results-count"></p>
+    <div class="featured-grid" id="catalog-grid"></div>
+  </div>
+</section>
+<footer><div class="container">
+<div class="foot-grid">
+<div><a class="brand" href="index.html" style="margin-bottom:1rem"><svg class="logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4 6 20h5v22h26V20h5L24 4z" fill="#0e5b4a"/>
+<path d="M24 4 6 20h5v22h26V20h5L24 4z" stroke="#c9a24b" stroke-width="2" fill="none"/>
+<path d="M19 42V28h10v14" fill="#faf8f4"/>
+<path d="M19 28h10v14H19z" stroke="#0e5b4a" stroke-width="1.6"/>
+<circle cx="24" cy="14" r="2.6" fill="#c9a24b"/>
+</svg><span class="brand-name" style="color:#fff">Darna<small>Immobilier</small></span></a>
+<p style="font-size:.9rem;margin-top:1rem" data-i18n="foot.about"></p>
+<div class="socials">
+<a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+<a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+<a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+</div></div>
+<div><h4 data-i18n="foot.nav"></h4><ul class="foot-links">
+<li><a href="index.html" data-i18n="nav.home"></a></li>
+<li><a href="biens.html" data-i18n="nav.biens"></a></li>
+<li><a href="contact.html" data-i18n="nav.contact"></a></li>
+</ul></div>
+<div><h4 data-i18n="foot.contact"></h4><ul class="foot-contact">
+<li><i class="fa-solid fa-location-dot"></i><span data-i18n="ct.addr"></span></li>
+<li><i class="fa-solid fa-phone"></i><span data-i18n="top.phone"></span></li>
+<li><i class="fa-solid fa-envelope"></i><span data-i18n="top.mail"></span></li>
+<li><i class="fa-solid fa-clock"></i><span data-i18n="top.hours"></span></li>
+</ul></div>
+<div><h4 data-i18n="foot.news"></h4>
+<p style="font-size:.88rem" data-i18n="ct.addr"></p>
+<p style="font-size:.88rem;margin-top:.6rem" data-i18n="ct.info.p"></p>
+</div>
+</div>
+<div class="foot-bottom">© <span class="js-year"></span> Darna Immobilier — dar·na / دارنا</div>
+</div></footer>
+<script src="js/lang.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/simulator.js"></script>
+<script src="js/main.js"></script>
+</body></html>
